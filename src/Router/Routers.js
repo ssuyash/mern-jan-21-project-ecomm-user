@@ -10,6 +10,11 @@ import Forgotpassword from '../Containers/Forgotpassword'
 import Otp from '../Containers/Otp'
 import Resetpassword from '../Containers/Resetpassword'
 import Changepassword from '../Containers/Changepassword'
+import Orders from '../Containers/Orders'
+import Wishlist from '../Containers/Wishlist'
+import Notifications from '../Containers/Notifications'
+import Cart from '../Containers/Cart'
+import Checkout from '../Containers/Checkout'
 export default function Routers() {
     return (
         <Router>
@@ -23,5 +28,10 @@ export default function Routers() {
             <Route path="/otp" component={Otp}></Route>
             <Route path="/reset-password" component={Resetpassword}></Route>
             <Route path="/change-password" component={Changepassword}></Route>
+            <Route path="/orders" component={Orders}></Route>
+            <Route path="/wishlist" component={Wishlist}></Route>
+            <Route path="/notifications" component={Notifications}></Route>
+            <Route path="/cart" component={Cart}></Route>
+            <Route path="/checkout" component={Checkout}></Route>
         </Router>)
 }
